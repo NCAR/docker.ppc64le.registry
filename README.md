@@ -4,6 +4,6 @@ Docker does not provide a Power based registry:2 image. It must be first cross-c
 
 1. Checkout Repo on x86 machine with docker
 ````bash
-git clone todo
+git clone https://github.com/NCAR/docker.ppc64le.registry.git
 ````
-
+1. test
