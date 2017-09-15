@@ -17,4 +17,4 @@ stop:
         while docker stop -t 1 $(DOCKER_TAG) ; do /bin/true; done
 
 run: build stop
-        docker run -d --rm -it --log-driver=syslog -v /dev/log:/dev/log -v /var/lib/registry:${VOL_REGISTRY} --name $(DOCKER_TAG) $(DOCKER_TAG) 
+        docker run -d --rm -it --restart unless-stopped --log-driver=syslog -v /dev/log:/dev/log -v /var/lib/registry:${VOL_REGISTRY} --name $(DOCKER_TAG) $(DOCKER_TAG) 
