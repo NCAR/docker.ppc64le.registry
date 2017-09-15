@@ -19,6 +19,7 @@ scp registry $POWERNODE:/tmp/
 ````bash
 git clone https://github.com/NCAR/docker.ppc64le.registry.git
 cd docker.ppc64le.registry/registry/
+cp /tmp/registry .
 ````
 5. Build and run registry via make. Make sure to set your preferences for the make file variables.
 ````bash
